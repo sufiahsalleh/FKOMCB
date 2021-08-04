@@ -51,7 +51,7 @@ public class BookingListDetails extends AppCompatActivity {
 
     //notification
     final private String FCM_API = "https://fcm.googleapis.com/fcm/send";
-    final private String serverKey = "key=" + "AAAAvwt6S4I:APA91bGofgyM3zWk0GPpZxGLdagzmSvKm1XvJ8MJchX_LpuNqJi1gQsnha7-z7JH55y43YYsdaZfTHcO4VOlwpoWN7S_qc1E4SwATQgRd3m4h009R_LBnQ9znG6vcK3Rq8E4hWUbClt7";
+    final private String serverKey = "key=" + "insertyourownkeyhere";
     final private String contentType = "application/json";
 
     String NOTIFICATION_TITLE;
