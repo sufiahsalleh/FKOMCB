@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">820531317634-tvsp0d7av6uf465vqkv0mairr12qv7iv.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">820531317634</string>
+    <string name="google_api_key" translatable="false">AIzaSyCPmpqwrYF0BEsthbz-rio4-XVQAH0j0fA</string>
+    <string name="google_app_id" translatable="false">1:820531317634:android:c8c3a605f97d28e5831d9b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCPmpqwrYF0BEsthbz-rio4-XVQAH0j0fA</string>
+    <string name="google_storage_bucket" translatable="false">fkomcarbooking.appspot.com</string>
+    <string name="project_id" translatable="false">fkomcarbooking</string>
+</resources>
