@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgr"
+    tools:context=".StaffHistoryDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/staffmenubar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="HISTORY DETAILS"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/getBID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="bookingID "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:neumorph_shapeType="pressed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="From:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="To:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Collect:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Return:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Work Order:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Programme:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Address:"
+                        android:textAlignment="textEnd"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Driver's Name:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="No. of Passanger:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Date From"
+                        android:textSize="20dp"
+                        android:textColor="@color/greyish" />
+
+                    <TextView
+                        android:id="@+id/dT"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Date To"
+                        android:textSize="20dp"
+                        android:textColor="@color/greyish"/>
+
+                    <TextView
+                        android:id="@+id/cI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Time Check In"
+                        android:textSize="20dp"
+                        android:textColor="@color/greyish"/>
+
+                    <TextView
+                        android:id="@+id/cO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Time Check Out"
+                        android:textSize="20dp"
+                        android:textColor="@color/greyish"/>
+
+                    <TextView
+                        android:id="@+id/wo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Work Order"
+                        android:textSize="20dp"
+                        android:textColor="@color/greyish"/>
+
+                    <TextView
+                        android:id="@+id/purposes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="programme"
+                        android:textSize="20dp"
+                        android:textColor="@color/greyish"/>
+
+                    <TextView
+                        android:id="@+id/locate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Location"
+                        android:textSize="20dp"
+                        android:textColor="@color/greyish"/>
+
+                    <TextView
+                        android:id="@+id/dName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Driver's Name"
+                        android:textSize="20dp"
+                        android:textColor="@color/greyish"/>
+
+                    <TextView
+                        android:id="@+id/nop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="No. of Passanger"
+                        android:textSize="20dp"
+                        android:textColor="@color/greyish"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button"
+            android:text="BACK"
+            android:textSize="14dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

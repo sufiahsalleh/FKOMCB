@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FKOM_Car_Booking</string>
+
+    <string-array name="UserCategory">
+        <item>Please Choose User Category</item>
+        <item>Admin</item>
+        <item>FKOM Staff</item>
+    </string-array>
+</resources>

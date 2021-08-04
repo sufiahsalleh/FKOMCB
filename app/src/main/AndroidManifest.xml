@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fkom_car_booking">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fcblogo"
+        android:label="FKOM Car Booking"
+        android:roundIcon="@drawable/fcblogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FKOM_Car_Booking">
+        <activity android:name=".StaffViewDetails"></activity>
+        <activity android:name=".StaffViewAvailability" />
+        <activity android:name=".AdminProfile" />
+        <activity android:name=".BookingListDetails" />
+        <activity android:name=".StaffHistoryDetails" />
+        <activity android:name=".StaffBookingDetails" />
+        <activity android:name=".AdminBookingList" />
+        <activity android:name=".StaffBooking" />
+        <activity android:name=".StaffProfile" />
+        <activity android:name=".StaffBookingHistory" />
+        <activity android:name=".MainPage" />
+        <activity android:name=".AdminHome" />
+        <activity android:name=".StaffHome" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".controller.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".controller.MyFirebaseMessagingService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

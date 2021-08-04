@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StaffBookingDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/staffmenubar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="BOOKING DETAILS"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28dp"/>
+    </RelativeLayout>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/staffcv">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="No. Work Order:"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Programme:"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/workorderET"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:hint="Insert No. Work Order"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/programmeET"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:hint="Insert Programme"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/staffcv"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameTV"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:text="From"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/dateFrom"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="15dp"
+                    android:textSize="18dp"
+                    android:text="from"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/in"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:text="Collect Time"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/checkin"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="15dp"
+                    android:textSize="18dp"
+                    android:text="in"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="15dp"
+                    android:text="To"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/dateTo"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="18dp"
+                    android:text="to"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/out"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="15dp"
+                    android:text="Return Time"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/checkout"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="18dp"
+                    android:text="to"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/locate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="60dp"
+        app:neumorph_shapeType="basin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/staffcv">
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:background="@drawable/no_background"
+            android:textSize="18dp"
+            android:hint="Insert Location Address"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"/>
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <TextView
+        android:id="@+id/drnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver's Name"
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        android:hint="Insert Driver's Name"
+        android:textColor="@color/black"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"/>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="60dp"
+        app:neumorph_shapeType="basin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/staffcv">
+
+        <EditText
+            android:id="@+id/drivers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp"
+            android:textSize="18dp"
+            android:ems="10"
+            android:background="@drawable/no_background"
+            android:inputType="text" />
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <TextView
+        android:id="@+id/nopTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of Passenger"
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="60dp"
+        app:neumorph_shapeType="basin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/staffcv">
+
+        <Spinner
+            android:id="@+id/passenger"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textSize="18dp"
+            android:background="@drawable/no_background"/>
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="BACK"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"/>
+        <Button
+            android:id="@+id/nextbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+
+</LinearLayout>
