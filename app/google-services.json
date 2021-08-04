@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "820531317634",
+    "project_id": "fkomcarbooking",
+    "storage_bucket": "fkomcarbooking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820531317634:android:c8c3a605f97d28e5831d9b",
+        "android_client_info": {
+          "package_name": "com.example.fkom_car_booking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820531317634-tvsp0d7av6uf465vqkv0mairr12qv7iv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPmpqwrYF0BEsthbz-rio4-XVQAH0j0fA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820531317634-tvsp0d7av6uf465vqkv0mairr12qv7iv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
